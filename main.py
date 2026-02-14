@@ -107,7 +107,7 @@ def main():
         metrics["total_commits"] += 1
         metrics["last_commit_at"] = timestamp
         save_metrics(metrics)
-
+        logger.info(f"Sleeping: {SLEEP_SECONDS+commits_to_make} seconds")
         time.sleep(SLEEP_SECONDS+commits_to_make)
 
     logger.info("All commits completed. Starting push.")
