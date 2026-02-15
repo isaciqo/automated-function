@@ -2,7 +2,7 @@ name: Daily Commit Tracker
 
 on:
   schedule:
-    - cron: "*/3 * * * *" # Todo dia 11:28 UTC (10:00 Brasil)
+    - cron: "35 14 * * *" # Todo dia 11:35 UTC (10:00 Brasil)
   workflow_dispatch:
 
 jobs:
